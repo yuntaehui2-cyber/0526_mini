@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>주소록 시스템 로그인</h2>
+<div id="loginForm">
+    <input type="text" id="username" placeholder="아이디 (admin)"><br>
+    <input type="password" id="password" placeholder="비밀번호 (1234)"><br>
+    <button id="loginBtn">로그인</button>
+</div>
+
+<script src="/templates/auth/auth.js" defer></script>
+{% endblock %}

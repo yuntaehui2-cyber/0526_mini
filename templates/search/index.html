@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>주소록 관리 <button id="logoutBtn" style="background-color: #e57373; float: right;">로그아웃</button></h2>
+<hr>
+
+<h3>새 연락처 추가</h3>
+<div>
+    <input type="text" id="name" placeholder="이름">
+    <input type="text" id="phone" placeholder="전화번호">
+    <input type="text" id="address" placeholder="주소">
+    <button id="addBtn">추가</button>
+</div>
+<hr>
+
+<h3>연락처 검색</h3>
+<div>
+    <input type="text" id="searchKeyword" placeholder="이름, 전화번호, 주소 검색...">
+    <button id="searchBtn">검색</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>이름</th>
+            <th>전화번호</th>
+            <th>주소</th>
+        </tr>
+    </thead>
+    <tbody id="contactTableBody">
+        </tbody>
+</table>
+
+<script src="/templates/search/search.js" defer></script>
+{% endblock %}
